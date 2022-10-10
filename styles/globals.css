@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+
+  /* Để overflow ở body thì k dùng được sticky */
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.scrollbar-x::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+.scrollbar-x::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.scrollbar-x::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.scrollbar-x::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+.scrollbar-y::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.scrollbar-y::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.scrollbar-y::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.scrollbar-y::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

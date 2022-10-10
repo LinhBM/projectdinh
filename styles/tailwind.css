@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 0px 20px;
+        gap: 8px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        @apply bg-neutral-100 text-white active:bg-neutral-200;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 0px 20px;
+        gap: 8px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        @apply bg-primary text-white active:bg-opacity-20 active:text-primary;
+    }
+
+    .btn-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 0px 20px;
+        gap: 8px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        @apply text-white active:text-primary;
+    }
+
+    .btn-disabled {
+        @apply bg-neutral-100 text-neutral-200;
+    }
+
+    .btn-small {
+        height: 32px;
+        gap: 8px;
+    }
+
+    .avatar {
+        @apply shrink-0 rounded-full bg-gray-500 overflow-hidden object-cover
+    }
+    .text-field {
+        @apply w-full px-4 bg-neutral-100 rounded-xl flex items-center gap-2 h-10
+    }
+    input[type=range]::-webkit-slider-thumb {
+        @apply bg-white h-2 w-2;
+    }
+
+    .slider-vertical {
+        writing-mode: bt-lr;
+        /* IE */
+        -webkit-appearance: slider-vertical;
+        /* Chromium */
+    }
+
+    .divider {
+        @apply border-b border-neutral-200;
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-black text-white
+    }
+
+    a {
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    body,
+    .body,
+    p {
+        padding: 0;
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.408px;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+ 
+ 
+    .headline {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: -0.408px;
+    }
+
+    .subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+    }
+
+    .caption1 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .caption2 {
+        font-weight: 400;
+        font-size: 11px;
+        letter-spacing: 0.066px;
+    }
+}
+* {
+    box-sizing: border-box;
+}
