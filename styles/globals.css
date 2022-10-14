@@ -56,11 +56,6 @@ a {
   background: #555;
 }
 
-
-
-
-
-
 .scrollbar-y::-webkit-scrollbar {
   width: 8px;
 }
@@ -79,4 +74,9 @@ a {
 /* Handle on hover */
 .scrollbar-y::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
 }

@@ -24,6 +24,7 @@ export interface AuthState {
     | {
         id: number
         avatar: string
+        user: []
       }
     | some
   profile?: some
@@ -85,7 +86,7 @@ export function login(
       Cookies.set(TOKEN, json.data.token)
       const tokenInfo = parseJwt(json.data.token)
       dispatch(
-        setUserData({
+        setUserData({user: json.config.data,
           ...json.data,
           id: tokenInfo?.sub,
           avatar: tokenInfo?.context?.avatar,
